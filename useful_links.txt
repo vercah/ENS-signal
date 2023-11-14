@@ -1,0 +1,5 @@
+- Numerical tours: https://www.numerical-tours.com/python/
+
+- PyWavelet: https://pywavelets.readthedocs.io/en/latest/#
+
+- Audio notebooks: https://audiolabs-erlangen.de/resources/MIR/FMP/C0/C0.html
