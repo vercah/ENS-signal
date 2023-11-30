@@ -21,10 +21,16 @@ def load_sound(file, n0=None):
     return x/np.max(x)
 
 def fourier_transform(signal,Fe):
-    pass
+    fourier = np.fft.fft(signal)/Fe
+    n = len(signal)
+    timestep = 1/Fe
+    freq = np.fft.fftfreq(n, d=timestep)
+    return fourier, freq
 
 def fourier_transform_positif(signal,Fe):
-    pass
+    fourier = np.fft.fft(signal)/Fe
+    freq = np.linspace(0, Fe, num=len(signal))
+    return fourier, freq
 
 def inverse_fourier_transform(FT,Fe):
     pass
